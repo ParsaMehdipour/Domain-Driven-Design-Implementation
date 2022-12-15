@@ -1,4 +1,5 @@
 ﻿using Domain.Primitives;
+using Domain.ValueObjects;
 
 namespace Domain.Entities;
 
@@ -8,7 +9,7 @@ public class Member : BaseEntity
     {
     }
 
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Email { get; set; }
+    public FirstName FirstName { get; set; }
+    public LastName LastName { get; set; }
+    public Email Email { get; set; }
 }
