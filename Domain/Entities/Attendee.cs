@@ -5,8 +5,10 @@ namespace Domain.Entities;
 public class Attendee : BaseEntity
 {
 
-    public Attendee(Guid id) : base(id)
+    public Attendee(Guid id, Member member, Conference conference) : base(id)
     {
+        ConferenceId = conference.Id;
+        MemberId = member.Id;
         CreatedOnUtc = DateTime.UtcNow;
     }
 
