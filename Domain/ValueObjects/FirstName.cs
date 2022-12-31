@@ -1,4 +1,5 @@
-﻿using Domain.Primitives;
+﻿using Domain.Errors;
+using Domain.Primitives;
 using Domain.Shared;
 
 namespace Domain.ValueObjects;
@@ -18,16 +19,12 @@ public sealed class FirstName : ValueObject
     {
         if (string.IsNullOrWhiteSpace(firstName))
         {
-            return Result.Failure<FirstName>(new Error(
-                "FirstName.Empty",
-                "First name is empty."));
+            return Result.Failure<FirstName>(DomainErrors.FirstName.Empty);
         }
 
         if (firstName.Length > MaxLength)
         {
-            return Result.Failure<FirstName>(new Error(
-                "FirstName.TooLong",
-                "First name is too long."));
+            return Result.Failure<FirstName>(DomainErrors.FirstName.TooLong);
         }
 
         return new FirstName(firstName);
