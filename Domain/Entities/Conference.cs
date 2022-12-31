@@ -8,7 +8,7 @@ public class Conference : AggregateRoot
     private readonly List<Invitation> _invitations = new();
     private readonly List<Attendee> _attendees = new();
 
-    private Conference(
+    public Conference(
         Guid id,
         Member creator,
         ConferenceType type,
