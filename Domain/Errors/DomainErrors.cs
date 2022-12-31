@@ -8,6 +8,21 @@ public static class DomainErrors
     This feature enables the user to logically group classes that are only used in one place,
     thus this increases the use of encapsulation,
     and create more readable and maintainable code*/
+    public static class Conference
+    {
+        public static readonly Error InvitingCreator = new(
+            "Conference.InvitingCreator",
+            "Can't send invitation to the Conference creator.");
+
+        public static readonly Error AlreadyPassed = new(
+            "Conference.AlreadyPassed",
+            "Can't send invitation to a Conference in the past.");
+
+        public static readonly Error Expired = new(
+            "Conference.Expired",
+            "Can't send invitation for an expired Conference.");
+    }
+
     public static class Email
     {
         public static readonly Error Empty = new(
