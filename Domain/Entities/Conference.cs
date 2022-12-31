@@ -1,5 +1,7 @@
 ﻿using Domain.Enums;
+using Domain.Errors;
 using Domain.Primitives;
+using Domain.Shared;
 
 namespace Domain.Entities;
 
@@ -22,6 +24,21 @@ public class Conference : AggregateRoot
         ScheduledAtUtc = scheduledAtUtc;
         Name = name;
         Location = location;
+    }
+
+    public Result<Invitation> SendInvitation(Member member)
+    {
+        if (Creator.Id == member.Id)
+            return Result.Failure<Invitation>(DomainErrors.Conference.InvitingCreator);
+
+        if (ScheduledAtUtc < DateTime.Now)
+            return Result.Failure<Invitation>(DomainErrors.Conference.AlreadyPassed);
+
+        Invitation invitation = new(new Guid(), member, this);
+
+        _invitations.Add(invitation);
+
+        return invitation;
     }
 
     public Member Creator { get; private set; }
