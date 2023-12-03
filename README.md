@@ -11,7 +11,7 @@ DDD refers to the application's problem space - the business - as the domain. A 
 Each subdomain corresponds to a different part of the business. 
 Subdomains can be classified as follows: Core - key differentiator for the business and the most valuable part of the application.
 
-![blg_inline_domain_driven-01](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/e323f353-966c-43c6-9770-1382365f7655)
+![slide-12](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/f6bd59d4-85be-4561-bcad-7172aeadac9a)
 
 # Technical jargons:
 1. Domain
