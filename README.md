@@ -15,6 +15,7 @@ Subdomains can be classified as follows: Core - key differentiator for the busin
 
 # Technical jargons:
 1. Domain
+1. Subdomain
 1. Domain Language
 1. Domain Expert 
 1. Problem Space
@@ -23,6 +24,13 @@ Subdomains can be classified as follows: Core - key differentiator for the busin
 1. Event Storming
 1. Modeling Language
 1. Domain Events
+1. Design patterns
+1. Bounded context
+1. Entities
+1. Value objects
+1. Aggregates
+1. Domain service
+1. Repository
 
 # Lets Start!🚀
 
