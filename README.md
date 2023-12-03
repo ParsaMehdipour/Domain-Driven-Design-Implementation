@@ -13,7 +13,7 @@ Subdomains can be classified as follows: Core - key differentiator for the busin
 
 ![domain-layer](https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg)
 
-#Technical jargons:
+# Technical jargons:
 1. Domain
 1. Problem Space
 1. Solution Space
