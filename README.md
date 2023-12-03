@@ -46,7 +46,3 @@ A domain consists of several subdomains that refer to different parts of the bus
 # Architecture:
 
 ![domain-layer](https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg)
-
-![Screenshot (34)](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/c7093783-ec95-4ccb-9f80-b452c40b9782)
-
-![Screenshot (35)](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/1f5524e1-89a3-46d3-96f8-9f83af9acf27)
