@@ -43,6 +43,8 @@ A domain defines the area of operation of you or your used application. The defi
 # Subdomain:
 A domain consists of several subdomains that refer to different parts of the business logic. For example, an online retail store could have a product catalog, inventory, and delivery as its subdomains.
 
+![1T643l](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/7b76167f-77ea-4b7f-bb88-71882addc395)
+
 # Architecture:
 
 ![domain-layer](https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg)
