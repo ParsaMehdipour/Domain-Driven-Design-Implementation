@@ -11,7 +11,7 @@ DDD refers to the application's problem space - the business - as the domain. A 
 Each subdomain corresponds to a different part of the business. 
 Subdomains can be classified as follows: Core - key differentiator for the business and the most valuable part of the application.
 
-![domain-layer](https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg)
+![blg_inline_domain_driven-01](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/e323f353-966c-43c6-9770-1382365f7655)
 
 # Technical jargons:
 1. Domain
@@ -35,11 +35,17 @@ Subdomains can be classified as follows: Core - key differentiator for the busin
 
 # Lets Start!🚀
 
-# Domain :
+# Domain:
 A domain defines the area of operation of you or your used application. The definition of a DDD domain by Andrew Powell-Morse is: Domain in the realm of software engineering commonly refers to the subject area on which the application is intended to apply.
 
 ![9032 1581163764](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/e095db11-56db-41ad-9055-eeaf2afa97bd)
 
+# Subdomain:
+A domain consists of several subdomains that refer to different parts of the business logic. For example, an online retail store could have a product catalog, inventory, and delivery as its subdomains.
+
+# Architecture:
+
+![domain-layer](https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg)
 
 ![Screenshot (34)](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/c7093783-ec95-4ccb-9f80-b452c40b9782)
 
