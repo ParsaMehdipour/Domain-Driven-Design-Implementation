@@ -15,8 +15,16 @@ Subdomains can be classified as follows: Core - key differentiator for the busin
 
 # Technical jargons:
 1. Domain
+1. Domain Language
+1. Domain Expert 
 1. Problem Space
 1. Solution Space
+1. Ubiquitous Language
+1. Event Storming
+1. Modeling Language
+1. Domain Events
+
+# Lets Start!🚀
 
 
 ![Screenshot (34)](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/c7093783-ec95-4ccb-9f80-b452c40b9782)
