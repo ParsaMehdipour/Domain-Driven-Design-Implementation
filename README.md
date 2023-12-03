@@ -40,13 +40,19 @@ Subdomains can be classified as follows: Core - key differentiator for the busin
 # Domain:
 A domain defines the area of operation of you or your used application. The definition of a DDD domain by Andrew Powell-Morse is: Domain in the realm of software engineering commonly refers to the subject area on which the application is intended to apply.
 
-![9032 1581163764](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/e095db11-56db-41ad-9055-eeaf2afa97bd)
+<p align="center">
+  <img src="https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/e095db11-56db-41ad-9055-eeaf2afa97bd" width="800">
+</p>
 
 # Subdomain:
 A domain consists of several subdomains that refer to different parts of the business logic. For example, an online retail store could have a product catalog, inventory, and delivery as its subdomains.
 
-![1T643l](https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/7b76167f-77ea-4b7f-bb88-71882addc395)
+<p align="center">
+  <img src="https://github.com/ParsaMehdipour/Domain-Driven-Design-Implementation/assets/75223567/7b76167f-77ea-4b7f-bb88-71882addc395" width="800">
+</p>
 
 # Architecture:
 
-![domain-layer](https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/75223567/198534083-d5aca1ce-eae1-42bc-8b03-fc322ff41fab.svg" width="800">
+</p>
