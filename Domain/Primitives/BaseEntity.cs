@@ -1,23 +1,22 @@
 ﻿namespace Domain.Primitives;
-public abstract class BaseEntity<TKey> : IEquatable<BaseEntity<TKey>>
+
+public abstract class BaseEntity : IEquatable<BaseEntity>
 {
-    public TKey Id { get; private init; }
+    protected BaseEntity(Guid id) => Id = id;
 
-    protected BaseEntity(TKey id)
+    protected BaseEntity()
     {
-        Id = id;
     }
 
-#nullable enable
-    public static bool operator ==(BaseEntity<TKey>? first, BaseEntity<TKey>? second)
-    {
-        return first is not null && second is not null && first.Equals(second);
-    }
-    public static bool operator !=(BaseEntity<TKey>? first, BaseEntity<TKey>? second)
-    {
-        return !(first == second);
-    }
-    public bool Equals(BaseEntity<TKey>? other)
+    public Guid Id { get; private init; }
+
+    public static bool operator ==(BaseEntity? first, BaseEntity? second) =>
+        first is not null && second is not null && first.Equals(second);
+
+    public static bool operator !=(BaseEntity? first, BaseEntity? second) =>
+        !(first == second);
+
+    public bool Equals(BaseEntity? other)
     {
         if (other is null)
         {
@@ -29,8 +28,9 @@ public abstract class BaseEntity<TKey> : IEquatable<BaseEntity<TKey>>
             return false;
         }
 
-        return other.Id.Equals(Id);
+        return other.Id == Id;
     }
+
     public override bool Equals(object? obj)
     {
         if (obj is null)
@@ -43,23 +43,13 @@ public abstract class BaseEntity<TKey> : IEquatable<BaseEntity<TKey>>
             return false;
         }
 
-        if (obj is not BaseEntity<TKey> entity)
+        if (obj is not BaseEntity entity)
         {
             return false;
         }
 
-        return entity.Id.Equals(Id);
+        return entity.Id == Id;
     }
-    public override int GetHashCode()
-    {
-        return Id.GetHashCode() * 41;
-    }
-#nullable disable
-}
 
-public abstract class BaseEntity : BaseEntity<Guid>
-{
-    protected BaseEntity(Guid id) : base(id)
-    {
-    }
+    public override int GetHashCode() => Id.GetHashCode() * 41;
 }
